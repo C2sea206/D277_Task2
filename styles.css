@@ -25,20 +25,12 @@ ol {
   font-size: 18px; /* Adjust the font size as needed */
   margin-left: 20px; /* Adjust the left margin for indentation */
 }
+
 li {
   margin-bottom: 10px; /* Adjust the bottom margin for spacing between list items */
   text-align: left;
   padding: 0.5%%;
 }
-ul{
-    font-size: 18px;
-    margin-left: 20px;
-    align-items: center;
-}
-#one {
-    margin-bottom: 10px; /* Adjust the bottom margin for spacing between list items */
-    text-align: center;
-    padding: 0.5%%;
 #learn {
   font-size: x-large;
   font-family: "Times New Roman", Times, serif;
