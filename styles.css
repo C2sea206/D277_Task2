@@ -16,14 +16,59 @@
   padding-right: 8%;
   padding-bottom: 30px;
 }
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: x-large;
+}
+/* Increase font size and adjust spacing for <ol> and <li> elements */
+ol {
+  font-size: 18px; /* Adjust the font size as needed */
+  margin-left: 20px; /* Adjust the left margin for indentation */
+}
+li {
+  margin-bottom: 10px; /* Adjust the bottom margin for spacing between list items */
+  text-align: left;
+  padding: 0.5%%;
+}
+ul{
+    font-size: 18px;
+    margin-left: 20px;
+    align-items: center;
+}
+#one {
+    margin-bottom: 10px; /* Adjust the bottom margin for spacing between list items */
+    text-align: center;
+    padding: 0.5%%;
+#learn {
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+}
+#Fact {
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+}
+.navContainer a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Set default link color */
+}
+.navContainer a:hover {
+  color: blue; /* Change link color on hover */
+}
 
 #Wa {
   text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: xx-large;
+  padding: 1%;
 }
 #pwa {
   text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  padding: 1%;
 }
 #state {
+  position: relative;
   display: block;
   margin: 0 auto;
   width: 100%;
