@@ -1,0 +1,8 @@
+.imgContainer{
+    float:left;
+}
+.navContainer {
+    display: flex; /* Display children in a row */
+    justify-content: space-between; /* Distribute space between elements */
+    margin: 0 100px;*/
+}
