@@ -16,6 +16,25 @@
   padding-right: 8%;
   padding-bottom: 30px;
 }
+#capital{
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+font-size: xx-large;
+}
+#capital1{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.theTable{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  padding: 1%;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
 h1 {
   font-family: "Courier New", Courier, monospace;
   font-size: x-large;
@@ -34,6 +53,13 @@ li {
 #learn {
   font-size: x-large;
   font-family: "Times New Roman", Times, serif;
+}
+div#one{
+  text-align: center;
+}
+ul#bullet{
+  display: inline-block;
+  text-align: center;
 }
 #Fact {
   font-size: x-large;
@@ -79,10 +105,11 @@ aside {
 
 .social-icons a {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .social-icons img {
   width: 40px; /* Adjust the size as needed */
   height: auto;
+  position: absolute;
 }
