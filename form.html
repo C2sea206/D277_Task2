@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <style>
+       #Email.match, #ConfirmEmail.match {
+      border: 2px solid green;
+    }
+
+    #Email.no-match, #ConfirmEmail.no-match {
+      border: 2px solid red;
+    }
+  </style>
+  <body>
+    <header>
+      <h1 class="page-header">Contact Us</h1>
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html" target="_blank">Home</a>
+        <a href="capital.html" target="_blank">Olympia</a>
+        <a href="seattle.html" target="_blank">Seattle</a>
+        <a href="bellevue.html" target="_blank">Bellevue</a>
+        <a href="form.html" target="_blank">Contact Us</a>
+      </nav>
+    </header>
+
+    <main class="wrapper">
+        <h2 class="subheader">Please enter your information below:</h2>
+        <form method="get" action="" class="main-form" id="emailForm">
+        <div>
+          <label for="FirstName">First Name</label><br />
+          <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required autofocus />
+        </div>
+        <div>
+          <label for="LastName">Last Name</label><br />
+          <input type="text" name="LastName" id="LastName" placeholder="Last Name" required />
+        </div>
+        <div>
+          <label for="Email">Email</label><br />
+          <input type="email" name="Email" id="Email" placeholder="Email" required />
+        </div>
+        <div>
+          <div>
+            <label for="ConfirmEmail">ConfirmEmail</label><br />
+            <input type="email" name="ConfirmEmail" id="ConfirmEmail" placeholder="ConfirmEmail" required />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label for="State">State</label><br />
+            <select name="State" id="State" required>
+              <option value="">Please select state</option>
+              <option value="AK">Alaska</option>
+              <option value="CA">California</option>
+              <option value="OR">Oregon</option>
+              <option value="WA">Washington</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="Comments">Comments or Questions</label><br />
+          <textarea name="Comments" id="Comments" placeholder="Comments or Questions" rows="4" cols="40"></textarea>
+        </div>
+        <div>
+          <input type="submit" />
+        </div>
+      </form>
+      <footer>
+        <h2>Resources and references</h2>
+        <p>All images come from unsplash.com, https://unsplash.com/photos/JEicDFy5Cd8, https://unsplash.com/photos/a_mlU1PbFIY,
+            https://unsplash.com/photos/-o3x_dhZijU, https://unsplash.com/photos/a-bridge-over-a-body-of-water-with-a-building-in-the-background-UBQWDcGQq7g, 
+            https://unsplash.com/photos/9fqnfJ0UnkY </p>
+        <p>All history reference comes from wiki pages to collect table data. https://en.wikipedia.org/wiki/Washington_(state), 
+            https://en.wikipedia.org/wiki/Olympia,_Washington, https://en.wikipedia.org/wiki/Seattle, https://en.wikipedia.org/wiki/Bellevue,_Washington
+        </p>
+      </footer>
+    </main>
+    <script>
+    const emailForm = document.getElementById("emailForm");
+    const email = document.getElementById("Email");
+    const confirmEmail = document.getElementById("ConfirmEmail");
+
+    emailForm.addEventListener("submit", function (event) {
+      if (email.value !== confirmEmail.value) {
+        alert("Email addresses do not match. Please make sure to enter the same email address.");
+        email.classList.add("no-match");
+        confirmEmail.classList.add("no-match");
+        event.preventDefault();
+      } else {
+        email.classList.remove("no-match");
+        confirmEmail.classList.remove("no-match");
+        email.classList.add("match");
+        confirmEmail.classList.add("match");
+      }
+    });
+    </script>
+  </body>
+</html>
